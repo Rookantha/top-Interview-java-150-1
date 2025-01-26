@@ -174,7 +174,7 @@ public class Main {
         System.out.println(findNeedle.strStr(haystack1, needle1)); // Output: 0
 
         // Example 2:
-        String haystack2 = "leetcode";
+        String haystack2 = "leetcod";
         String needle2 = "leeto";
         System.out.println(findNeedle.strStr(haystack2, needle2)); // Output: -1
 
