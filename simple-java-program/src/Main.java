@@ -17,11 +17,6 @@ public class Main {
         System.out.println("print Primes Up To ------");
         PrimeOperations.printPrimesUpTo(100);
 
-        // Palindrome
-        int palindromeNumber = 12321;
-        System.out.println(palindromeNumber + (PalindromeOperations.isPalindrome(palindromeNumber) ? " is a palindrome." : " is not a palindrome."));
-        String palindromeString = "radar";
-        System.out.println(palindromeString + (PalindromeOperations.isStringPalindrome(palindromeString) ? " is a palindrome." : " is not a palindrome."));
 
         // Factorial
         int factorialInput = 5;
@@ -178,8 +173,38 @@ public class Main {
         String needle2 = "leeto";
         System.out.println(findNeedle.strStr(haystack2, needle2)); // Output: -1
 
+        PalindromeNumber palindromeNumber = new PalindromeNumber();
+
+        // Test cases
+        System.out.println(palindromeNumber.isPalindrome(121)); // Output: true
+        System.out.println(palindromeNumber.isPalindrome(-121)); // Output: false
+        System.out.println(palindromeNumber.isPalindrome(10)); // Output: false
 
 
+        IncrementLargeInteger incrementLargeInteger = new IncrementLargeInteger();
+
+        // Test cases
+        int[] digits1 = {1, 2, 3};
+        int[] digits2 = {4, 3, 2, 1};
+        int[] digits3 = {9};
+
+        // Output results
+        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits1))); // Output: [1, 2, 4]
+        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits2))); // Output: [4, 3, 2, 2]
+        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits3))); // Output: [1, 0]
+
+
+
+        //Square Root
+        SquareRoot squareRoot = new SquareRoot();
+
+        // Test cases
+        System.out.println(squareRoot.mySqrt(4)); // Output: 2
+        System.out.println(squareRoot.mySqrt(8)); // Output: 2
+        System.out.println(squareRoot.mySqrt(16)); // Output: 4
+        System.out.println(squareRoot.mySqrt(1)); // Output: 1
+        System.out.println(squareRoot.mySqrt(0)); // Output: 0
+    }
     }
 
 
