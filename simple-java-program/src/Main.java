@@ -204,7 +204,7 @@ public class Main {
         System.out.println(squareRoot.mySqrt(16)); // Output: 4
         System.out.println(squareRoot.mySqrt(1)); // Output: 1
         System.out.println(squareRoot.mySqrt(0)); // Output: 0
-    }
+
     }
 
 
