@@ -1,7 +1,7 @@
 package Util;
 
 public class FindNeedle {
-    public int strStr(String haystack, String needle) {
+    public  static int strStr(String haystack, String needle) {
         // If needle is empty, return 0
         if (needle.isEmpty()) {
             return 0;

@@ -11,20 +11,34 @@ public class Main {
         int fibonacciCount = 10;
         FibonacciOperation.printFibonacci(fibonacciCount);
 
-        // Prime
-        int primeNumber = 29;
-        System.out.println(primeNumber + (PrimeOperations.isPrime(primeNumber) ? " is a prime number." : " is not a prime number."));
-        System.out.println("print Primes Up To ------");
-        PrimeOperations.printPrimesUpTo(100);
-
-
         // Factorial
         int factorialInput = 5;
         System.out.println("Factorial of " + factorialInput + " is: " + FactorialOperations.calculateFactorial(factorialInput));
 
+        // Find Needle
+        // Example 1:
+        String haystack1 = "sadbutsad";
+        String needle1 = "sad";
+        System.out.println(FindNeedle.strStr(haystack1, needle1)); // Output: 0
+
+        // Example 2:
+        String haystack2 = "leetcode";
+        String needle2 = "leeto";
+        System.out.println(FindNeedle.strStr(haystack2, needle2)); // Output: -1
+
         // Random number
         Random random = new Random();
         System.out.println("Random number: " + random.nextInt(101));
+
+        // Length Of Last Word
+        System.out.println(LengthOfLastWord.lengthOfLastWord("Hello World")); // Output: 5
+        System.out.println(LengthOfLastWord.lengthOfLastWord("   fly me   to   the moon  ")); // Output: 4
+        System.out.println(LengthOfLastWord.lengthOfLastWord("luffy is still joyboy")); // Output: 6
+
+        // Find Majority Element
+        int[] numsMajorityElements = {3, 2, 3};
+        int result = majorityElement(numsMajorityElements);
+        System.out.println("The majority element is: " + result);
 
         // GCD
         int gcd1 = 24, gcd2 = 36;
@@ -34,9 +48,7 @@ public class Main {
         int square = 16;
         System.out.println(square + (MathUtil.isPerfectSquare(square) ? " is a perfect square." : " is not a perfect square."));
 
-        // Even and Odd numbers
-        EvenOddOperations.printEvenNumbers(100);
-        EvenOddOperations.printOddNumbers(100);
+
 
         // Sum of natural numbers
         Scanner scanner = new Scanner(System.in);
@@ -62,21 +74,9 @@ public class Main {
             System.out.print(nums[i] + " ");
         }
 
-        // Input array
-        int[] numsMajorityElements = {3, 2, 3};
 
-        // Directly call the static majorityElement method
-        int result = majorityElement(numsMajorityElements);
 
-        // Print the result
-        System.out.println("The majority element is: " + result);
 
-        // Length Of Last Word
-        LengthOfLastWord solution = new LengthOfLastWord();
-
-        System.out.println(solution.lengthOfLastWord("Hello World")); // Output: 5
-        System.out.println(solution.lengthOfLastWord("   fly me   to   the moon  ")); // Output: 4
-        System.out.println(solution.lengthOfLastWord("luffy is still joyboy")); // Output: 6
 
         /////////////////////Sub sequence Check
         SubsequenceCheck subsequenceCheck = new SubsequenceCheck();
@@ -160,18 +160,7 @@ public class Main {
         System.out.println(reverseWords.reverseWords(string2)); // Output: "example good a"
 
 
-        // Find Needle
-        FindNeedle findNeedle = new FindNeedle();
 
-        // Example 1:
-        String haystack1 = "sadbutsad";
-        String needle1 = "sad";
-        System.out.println(findNeedle.strStr(haystack1, needle1)); // Output: 0
-
-        // Example 2:
-        String haystack2 = "leetcode";
-        String needle2 = "leeto";
-        System.out.println(findNeedle.strStr(haystack2, needle2)); // Output: -1
 
         PalindromeNumber palindromeNumber = new PalindromeNumber();
 
@@ -204,6 +193,14 @@ public class Main {
         System.out.println(squareRoot.mySqrt(16)); // Output: 4
         System.out.println(squareRoot.mySqrt(1)); // Output: 1
         System.out.println(squareRoot.mySqrt(0)); // Output: 0
+
+
+        // Prime
+        int primeNumber = 29;
+        System.out.println(primeNumber + (PrimeOperations.isPrime(primeNumber) ? " is a prime number." : " is not a prime number."));
+        System.out.println("print Primes Up To ------");
+        PrimeOperations.printPrimesUpTo(100);
+
 
     }
 

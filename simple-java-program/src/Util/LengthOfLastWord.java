@@ -1,7 +1,7 @@
 package Util;
 
 public class LengthOfLastWord {
-    public int lengthOfLastWord(String s) {
+    public static int lengthOfLastWord(String s) {
         int length = 0; // Length of the last word
         int i = s.length() - 1;
 
