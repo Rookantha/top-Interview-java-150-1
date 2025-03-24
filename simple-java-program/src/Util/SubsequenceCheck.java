@@ -1,7 +1,7 @@
 package Util;
 
 public class SubsequenceCheck {
-    public boolean isSubsequence(String s, String t) {
+    public static boolean isSubsequence(String s, String t) {
         int i = 0; // Pointer for s
         int j = 0; // Pointer for t
 

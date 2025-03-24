@@ -15,16 +15,7 @@ public class Main {
         int factorialInput = 5;
         System.out.println("Factorial of " + factorialInput + " is: " + FactorialOperations.calculateFactorial(factorialInput));
 
-        // Find Needle
-        // Example 1:
-        String haystack1 = "sadbutsad";
-        String needle1 = "sad";
-        System.out.println(FindNeedle.strStr(haystack1, needle1)); // Output: 0
 
-        // Example 2:
-        String haystack2 = "leetcode";
-        String needle2 = "leeto";
-        System.out.println(FindNeedle.strStr(haystack2, needle2)); // Output: -1
 
         // Random number
         Random random = new Random();
@@ -75,21 +66,31 @@ public class Main {
         }
 
 
-
-
-
-        /////////////////////Sub sequence Check
-        SubsequenceCheck subsequenceCheck = new SubsequenceCheck();
+        //Sub sequence Check
 
         // Example 1
         String s1 = "abc";
         String t1 = "ahbgdc";
-        System.out.println(subsequenceCheck.isSubsequence(s1, t1)); // Output: true
+        System.out.println("Is '" + s1 + "' a Sub sequence  of '" + t1 + "'? " + SubsequenceCheck.isSubsequence(s1, t1)); // Output: true
 
         // Example 2
         String s2 = "axc";
         String t2 = "ahbgdc";
-        System.out.println(subsequenceCheck.isSubsequence(s2, t2)); // Output: false
+        System.out.println("Is '" + s2 + "' a Sub sequence  of '" + t2 + "'? " + SubsequenceCheck.isSubsequence(s2, t2)); // Output: false
+
+        // Find Substring Search
+        // Example 1:
+        String haystack1 = "sadbutsad";
+        String needle1 = "sad";
+        System.out.println("Is '" + needle1 + "' a substring of '" + haystack1 + "'? " + SubstringSearch.strStr(haystack1, needle1));
+
+
+        // Example 2:
+        String haystack2 = "leetcode";
+        String needle2 = "leeto";
+        System.out.println("Is '" + needle2 + "' a substring of '" + haystack2 + "'? " + SubstringSearch.strStr(haystack2, needle2));
+
+
 
         TwoSum twoSum = new TwoSum();
 
