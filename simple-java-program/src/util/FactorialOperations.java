@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class FactorialOperations {
     public static long calculateFactorial(int n) {

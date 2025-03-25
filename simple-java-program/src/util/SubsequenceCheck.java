@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class SubsequenceCheck {
     public static boolean isSubsequence(String s, String t) {

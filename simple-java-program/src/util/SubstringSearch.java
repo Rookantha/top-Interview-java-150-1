@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class SubstringSearch {
     public  static int strStr(String haystack, String needle) {

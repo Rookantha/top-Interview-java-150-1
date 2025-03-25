@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class FibonacciOperation {
     public static void printFibonacci(int n) {

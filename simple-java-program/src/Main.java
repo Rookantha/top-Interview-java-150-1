@@ -1,21 +1,32 @@
-import Util.*;
+import util.*;
 
 import java.util.Random;
 import java.util.Scanner;
 
-import static Util.MajorityElement.majorityElement;
+import static util.MajorityElement.majorityElement;
 
 public class Main {
     public static void main(String[] args) {
-        // Fibonacci
-        int fibonacciCount = 10;
-        FibonacciOperation.printFibonacci(fibonacciCount);
 
         // Factorial
         int factorialInput = 5;
         System.out.println("Factorial of " + factorialInput + " is: " + FactorialOperations.calculateFactorial(factorialInput));
 
+        // Fibonacci
+        int fibonacciCount = 10;
+        FibonacciOperation.printFibonacci(fibonacciCount);
 
+        IncrementLargeInteger incrementLargeInteger = new IncrementLargeInteger();
+
+        // Test cases
+        int[] digits1 = {1, 2, 3};
+        int[] digits2 = {4, 3, 2, 1};
+        int[] digits3 = {9};
+
+        // Output results
+        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits1))); // Output: [1, 2, 4]
+        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits2))); // Output: [4, 3, 2, 2]
+        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits3))); // Output: [1, 0]
 
         // Random number
         Random random = new Random();
@@ -48,7 +59,15 @@ public class Main {
         scanner.close();
         System.out.println("Sum of natural numbers up to " + n + " is: " + NaturalNumberOperations.calculateSum(n));
 
-        //////////////////////// Input array and value to remove
+        // PalindromeNumber
+        System.out.println(PalindromeNumber.isPalindrome(121)); // Output: true
+        System.out.println(PalindromeNumber.isPalindrome(-121)); // Output: false
+        System.out.println(PalindromeNumber.isPalindrome(10)); // Output: false
+
+        // Palindrome String
+        System.out.println(PalindromeString.isPalindrome("hvjhv")); // Output: true
+
+        // Input array and value to remove
         int[] nums = {3, 2, 2, 3};
         int val = 3;
 
@@ -113,11 +132,10 @@ public class Main {
         System.out.println("Result 3: [" + result3[0] + ", " + result3[1] + "]");
 
         ///Remove Duplicates
-        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
 
         // Example 1:
         int[] numsRD1 = {1, 1, 2};
-        int k1 = removeDuplicates.removeDuplicates(numsRD1);
+        int k1 = RemoveDuplicates.removeDuplicates(numsRD1);
         System.out.println("Number of unique elements: " + k1);
         System.out.print("Unique elements: ");
         for (int i = 0; i < k1; i++) {
@@ -127,7 +145,7 @@ public class Main {
 
         // Example 2:
         int[] numsRD2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        int k2 = removeDuplicates.removeDuplicates(numsRD2);
+        int k2 = RemoveDuplicates.removeDuplicates(numsRD2);
         System.out.println("Number of unique elements: " + k2);
         System.out.print("Unique elements: ");
         for (int i = 0; i < k2; i++) {
@@ -163,25 +181,10 @@ public class Main {
 
 
 
-        PalindromeNumber palindromeNumber = new PalindromeNumber();
-
-        // Test cases
-        System.out.println(palindromeNumber.isPalindrome(121)); // Output: true
-        System.out.println(palindromeNumber.isPalindrome(-121)); // Output: false
-        System.out.println(palindromeNumber.isPalindrome(10)); // Output: false
 
 
-        IncrementLargeInteger incrementLargeInteger = new IncrementLargeInteger();
 
-        // Test cases
-        int[] digits1 = {1, 2, 3};
-        int[] digits2 = {4, 3, 2, 1};
-        int[] digits3 = {9};
 
-        // Output results
-        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits1))); // Output: [1, 2, 4]
-        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits2))); // Output: [4, 3, 2, 2]
-        System.out.println(java.util.Arrays.toString(incrementLargeInteger.plusOne(digits3))); // Output: [1, 0]
 
 
 

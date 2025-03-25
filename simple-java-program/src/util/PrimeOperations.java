@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class PrimeOperations {
     public static boolean isPrime(int n) {

@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class RemoveElement {
     // Method to remove all occurrences of val in nums and return the new length

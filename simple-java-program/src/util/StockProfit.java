@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class StockProfit {
     public int maxProfit(int[] prices) {

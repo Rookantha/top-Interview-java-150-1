@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class MathUtil {
     public static int findGCD(int n1, int n2) {

@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class EvenOddOperations {
     public static void printEvenNumbers(int limit) {
