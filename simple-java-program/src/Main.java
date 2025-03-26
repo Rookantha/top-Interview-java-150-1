@@ -77,7 +77,7 @@ public class Main {
         int[] nums = {3, 2, 2, 3};
         int val = 3;
         // Create an instance of RemoveElement
-        RemoveElement obj = new RemoveElement();
+        RemoveElementAnArray obj = new RemoveElementAnArray();
 
         // Call the removeElement method
         int k = obj.removeElement(nums, val);
