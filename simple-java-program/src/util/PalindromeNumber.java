@@ -7,17 +7,16 @@ public class PalindromeNumber {
             return false;
         }
 
-        int reversed = 0;
-        int original = x;
+        int reversedHalf = 0;
 
-        // Reverse the integer
-        while (x > 0) {
-            int digit = x % 10;
-            reversed = reversed * 10 + digit;
+        // Reverse only half of the number
+        while (x > reversedHalf) {
+            reversedHalf = reversedHalf * 10 + x % 10;
             x /= 10;
         }
 
-        // Check if the reversed number equals the original number
-        return reversed == original;
+        // Check if first half matches the reversed second half
+        return x == reversedHalf || x == reversedHalf / 10;
     }
+
 }

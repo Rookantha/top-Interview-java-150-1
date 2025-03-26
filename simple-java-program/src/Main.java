@@ -1,7 +1,6 @@
 import util.*;
 
 import java.util.Random;
-import java.util.Scanner;
 
 import static util.MajorityElement.majorityElement;
 
@@ -51,12 +50,8 @@ public class Main {
         System.out.println(square + (MathUtil.isPerfectSquare(square) ? " is a perfect square." : " is not a perfect square."));
 
 
-
         // Sum of natural numbers
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a positive integer: ");
-        int n = scanner.nextInt();
-        scanner.close();
+        int n = 5;
         System.out.println("Sum of natural numbers up to " + n + " is: " + NaturalNumberOperations.calculateSum(n));
 
         // PalindromeNumber
@@ -67,10 +62,20 @@ public class Main {
         // Palindrome String
         System.out.println(PalindromeString.isPalindrome("hvjhv")); // Output: true
 
+
+        ///Remove Duplicates
+        int[] numsRD1 = {1, 1, 2};
+        int k1 = RemoveDuplicatesSortedArray.removeDuplicates(numsRD1);
+        System.out.println("Number of unique elements: " + k1);
+        System.out.print("Unique elements: ");
+        for (int i = 0; i < k1; i++) {
+            System.out.print(numsRD1[i] + " ");
+        }
+        System.out.println();
+
         // Input array and value to remove
         int[] nums = {3, 2, 2, 3};
         int val = 3;
-
         // Create an instance of RemoveElement
         RemoveElement obj = new RemoveElement();
 
@@ -83,7 +88,6 @@ public class Main {
         for (int i = 0; i < k; i++) {
             System.out.print(nums[i] + " ");
         }
-
 
         //Sub sequence Check
 
@@ -131,27 +135,6 @@ public class Main {
         int[] result3 = twoSum.twoSum(numsTS3, target3);
         System.out.println("Result 3: [" + result3[0] + ", " + result3[1] + "]");
 
-        ///Remove Duplicates
-
-        // Example 1:
-        int[] numsRD1 = {1, 1, 2};
-        int k1 = RemoveDuplicates.removeDuplicates(numsRD1);
-        System.out.println("Number of unique elements: " + k1);
-        System.out.print("Unique elements: ");
-        for (int i = 0; i < k1; i++) {
-            System.out.print(numsRD1[i] + " ");
-        }
-        System.out.println();
-
-        // Example 2:
-        int[] numsRD2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        int k2 = RemoveDuplicates.removeDuplicates(numsRD2);
-        System.out.println("Number of unique elements: " + k2);
-        System.out.print("Unique elements: ");
-        for (int i = 0; i < k2; i++) {
-            System.out.print(numsRD2[i] + " ");
-        }
-        System.out.println();
 
         StockProfit stockProfit = new StockProfit();
 
